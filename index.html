@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Jump Jump</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="user-setting">
+        <!-- Game state btn -->
+        <div class="btn game-state game-pause">
+          <span class="play-state start">Start</span>
+          <span class="play-state pause">Pause</span>
+          <!-- start svg icon -->
+          <svg
+            class="svg-btn start"
+            version="1.1"
+            viewBox="0 0 36 36"
+            class="svg-btn start"
+          >
+            <path
+              d="M 12,26 18.5,22 18.5,14 12,10 z M 18.5,22 25,18 25,18 18.5,14 z"
+            ></path>
+          </svg>
+
+          <!-- pause svg icon -->
+          <svg version="1.1" viewBox="0 0 36 36" class="svg-btn pause">
+            <path
+              d="M 12,26 16,26 16,10 12,10 z M 21,26 25,26 25,10 21,10 z"
+            ></path>
+          </svg>
+        </div>
+
+        <!-- Restart btn -->
+        <div class="btn restart-btn">
+          <span class="restart">Restart</span
+          ><svg class="svg-btn" version="1.1" viewBox="0 0 36 36" width="100%">
+            <path
+              class="svg-btn"
+              d="M 18,11 V 7 l -5,5 5,5 v -4 c 3.3,0 6,2.7 6,6 0,3.3 -2.7,6 -6,6 -3.3,0 -6,-2.7 -6,-6 h -2 c 0,4.4 3.6,8 8,8 4.4,0 8,-3.6 8,-8 0,-4.4 -3.6,-8 -8,-8 z"
+            ></path>
+          </svg>
+        </div>
+
+        <!--Score -->
+        <div class="score">
+          <span class="score-label"> Score </span>
+          <span class="score-num">0</span>
+        </div>
+      </div>
+
+      <div class="game-component">
+        <div class="ball"></div>
+        <div class="obstracle"></div>
+      </div>
+      <div class="road"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
