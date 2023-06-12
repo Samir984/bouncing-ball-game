@@ -127,7 +127,7 @@ const collisionDetection = function () {
     } else {
       scoreNum.textContent = score;
     }
-  }, 100);
+  }, 50);
 };
 
 //handling speed of obstracle on window screen resize
